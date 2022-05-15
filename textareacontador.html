@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="css/cambiadorcolores.css">
+
+<body>
+    <h1>Formulario</h1>
+    <form action="enviar.php" id="formulario">
+        <p>
+            <label>Nombre: <input name="nombre" type="text"></label>
+        </p>
+        <p>
+            <label for="contador">Mensaje: <textarea name="contador" id="contador" onpaste="contarcaracteres();" onkeyup="contarcaracteres();" cols="30" rows="10"></textarea></label>
+        </p>
+        <p>
+            <button>Enviar</button>
+        </p>
+        <div id="res">0 caractere/s</div>
+    </form>
+
+
+
+
+<script>
+	function contarcaracteres(){
+		
+	       //Numero de caracteres permitidos
+               var total=120;
+
+		setTimeout(function(){
+		var valor=document.getElementById('contador');
+		var respuesta=document.getElementById('res');
+		var cantidad=valor.value.length;
+		document.getElementById('res').innerHTML = cantidad + ' caractere/s, te quedan ' + (total - cantidad) ;
+		if(cantidad>total){
+			respuesta.style.color = "red";
+		}
+		else {
+			respuesta.style.color = "black";
+		}
+		},10);
+
+	}
+</script>
+
+
+<script>
+	function contarcaracteres(){
+		
+	       //Numero de caracteres permitidos:
+               var total=500;
+
+		setTimeout(function(){
+		var valor=document.getElementById('contador');
+		var respuesta=document.getElementById('res');
+		var cantidad=valor.value.length;
+		document.getElementById('res').innerHTML = cantidad + ' caractere/s, te quedan ' + (total - cantidad) ;
+		if(cantidad>total){
+			respuesta.style.color = "red";
+		}
+		else {
+			respuesta.style.color = "black";
+		}
+		},10);
+
+	}
+</script>
+
+</body>

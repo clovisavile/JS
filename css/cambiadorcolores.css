@@ -1,0 +1,42 @@
+.boton1 {
+    font-family: Arial;
+    color: #000000;
+    padding-top: 40px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    text-decoration: none;
+    border: solid rgb(0, 0, 0) 6px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff0000), to(#ff0000));
+    background: -moz-linear-gradient(top, #c30000, #d00000);
+  }
+
+
+  .boton2 {
+    font-family: Arial;
+    color: #000000;
+    padding-top: 40px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    text-decoration: none;
+    border: solid #000000 6px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#0055FF), to(#0055FF));
+    background: -moz-linear-gradient(top, #0055FF, #0055FF);
+  }
+
+
+  .boton3 {
+    font-family: Arial;
+    color: #000000;
+    padding-top: 40px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    text-decoration: none;
+    border: solid #000000 6px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#00FF10), to(#00FF10));
+    background: -moz-linear-gradient(top, #00FF10, #00FF10);
+  }
+
+  
